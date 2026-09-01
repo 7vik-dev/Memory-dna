@@ -1,8 +1,8 @@
 import pytest
 
-from deepteam.vulnerabilities import SSRF
-from deepteam.vulnerabilities.ssrf import SSRFType
-from deepteam.test_case import RTTestCase
+from memory_dna.vulnerabilities import SSRF
+from memory_dna.vulnerabilities.ssrf import SSRFType
+from memory_dna.test_case import RTTestCase
 
 
 class TestSSRF:
@@ -83,7 +83,7 @@ class TestSSRF:
         assert hasattr(test_case, "reason")
 
     def test_get_metric_returns_SSRF_metric(self):
-        from deepteam.metrics import SSRFMetric
+        from memory_dna.metrics import SSRFMetric
 
         ssrf = SSRF(
             async_mode=True, verbose_mode=True, evaluation_model="gpt-4o"

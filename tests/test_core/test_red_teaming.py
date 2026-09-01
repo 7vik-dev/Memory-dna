@@ -1,7 +1,7 @@
-from deepteam import red_team
-from deepteam.vulnerabilities import *
-from deepteam.attacks.single_turn import *
-from deepteam.attacks.multi_turn import *
+from memory_dna import red_team
+from memory_dna.vulnerabilities import *
+from memory_dna.attacks.single_turn import *
+from memory_dna.attacks.multi_turn import *
 
 
 async def model_callback(input: str) -> str:

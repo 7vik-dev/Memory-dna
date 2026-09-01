@@ -1,10 +1,10 @@
 import pytest
 
-from deepteam.vulnerabilities import UnexpectedCodeExecution
-from deepteam.vulnerabilities.unexpected_code_execution import (
+from memory_dna.vulnerabilities import UnexpectedCodeExecution
+from memory_dna.vulnerabilities.unexpected_code_execution import (
     UnexpectedCodeExecutionType,
 )
-from deepteam.test_case import RTTestCase
+from memory_dna.test_case import RTTestCase
 
 
 class TestUnexpectedCodeExecution:
@@ -109,7 +109,7 @@ class TestUnexpectedCodeExecution:
         assert hasattr(test_case, "reason")
 
     def test_get_metric_returns_unexpected_code_execution_metric(self):
-        from deepteam.metrics import UnexpectedCodeExecutionMetric
+        from memory_dna.metrics import UnexpectedCodeExecutionMetric
 
         unexpected_code_execution = UnexpectedCodeExecution(
             async_mode=True, verbose_mode=True, evaluation_model="gpt-4o"

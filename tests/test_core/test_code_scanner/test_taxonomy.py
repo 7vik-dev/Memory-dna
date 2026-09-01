@@ -1,11 +1,11 @@
-from deepteam.code_scanner import (
+from memory_dna.code_scanner import (
     KNOWN_VULNERABILITIES,
     allowed_types,
     is_known,
     vulnerability_names,
 )
-from deepteam.code_scanner.taxonomy import to_name
-from deepteam.vulnerabilities import SSRF
+from memory_dna.code_scanner.taxonomy import to_name
+from memory_dna.vulnerabilities import SSRF
 
 
 class TestTaxonomy:

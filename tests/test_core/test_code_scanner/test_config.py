@@ -1,4 +1,4 @@
-from deepteam.code_scanner import (
+from memory_dna.code_scanner import (
     CONFIG_FILENAMES,
     find_config_file,
     load_config,

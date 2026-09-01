@@ -2,8 +2,8 @@ import json
 
 import pytest
 
-import deepteam.code_scanner.github.report as gr
-from deepteam.code_scanner import CodeFinding
+import memory_dna.code_scanner.github.report as gr
+from memory_dna.code_scanner import CodeFinding
 
 
 class _Resp:
@@ -62,7 +62,7 @@ class TestGithubReport:
             == "https://api.test/v1/github-app/code-scan/comments"
         )
         body = captured["json"]
-        assert body["app"] == "deepteam"
+        assert body["app"] == "memory_dna"
         assert body["repo"] == "octo/repo"
         assert body["pr"] == 42
         assert body["oidc"] == "jwt"

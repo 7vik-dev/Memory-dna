@@ -5,14 +5,15 @@
     </picture>
 </p>
 
-<h1 align="center">The LLM Red Teaming Framework</h1>
+<h1 align="center">Memory DNA</h1>
+<h3 align="center">The LLM Red Teaming Framework</h3>
 
 <h4 align="center">
     <p>
         <a href="https://www.trydeepteam.com?utm_source=GitHub">Documentation</a> |
         <a href="#-vulnerabilities-attacks-and-features">Vulnerabilities, Attacks, and Features</a> |
         <a href="#-quickstart">Getting Started</a> |
-        <a href="#deepteam-with-confident-ai">Confident AI</a>
+        <a href="#memory-dna-with-confident-ai">Confident AI</a>
     <p>
 </h4>
 
@@ -39,11 +40,11 @@
     <a href="https://www.readme-i18n.com/confident-ai/deepteam?lang=zh">中文</a>
 </p>
 
-**DeepTeam** is a simple-to-use, open-source red teaming framework for LLM systems. Think of it as penetration testing, but for LLMs.
+**Memory DNA** is a simple-to-use, open-source red teaming framework for LLM systems. Think of it as penetration testing, but for LLMs.
 
-DeepTeam simulates attacks — jailbreaking, prompt injection, multi-turn exploitation, and more — to uncover vulnerabilities like bias, PII leakage, and SQL injection in your AI agents, RAG pipelines, and chatbots. It also offers **guardrails** to prevent these issues in production.
+Memory DNA simulates attacks — jailbreaking, prompt injection, multi-turn exploitation, and more — to uncover vulnerabilities like bias, PII leakage, and SQL injection in your AI agents, RAG pipelines, and chatbots. It also offers **guardrails** to prevent these issues in production.
 
-DeepTeam runs **locally on your machine** and is built on [DeepEval](https://github.com/confident-ai/deepeval), the open-source LLM evaluation framework.
+Memory DNA runs **locally on your machine** and is built on [DeepEval](https://github.com/confident-ai/deepeval), the open-source LLM evaluation framework.
 
 > [!IMPORTANT]
 > Need a place for your red teaming results to live? Sign up to the [Confident AI](https://app.confident-ai.com?utm_source=deepteam&utm_medium=github&utm_content=results_callout) platform to manage risk assessments, monitor vulnerabilities in production, and share reports with your team.
@@ -195,20 +196,20 @@ DeepTeam runs **locally on your machine** and is built on [DeepEval](https://git
 
 # 🚀 QuickStart
 
-DeepTeam does not require you to define what LLM system you are red teaming — because neither will malicious users. All you need to do is install `deepteam`, define a `model_callback`, and you're good to go.
+Memory DNA does not require you to define what LLM system you are red teaming — because neither will malicious users. All you need to do is install `memory-dna`, define a `model_callback`, and you're good to go.
 
 ## Installation
 
-```
-pip install -U deepteam
+```bash
+pip install -U memory-dna
 ```
 
 ## Red Team Your First LLM
 
 ```python
-from deepteam import red_team
-from deepteam.vulnerabilities import Bias
-from deepteam.attacks.single_turn import PromptInjection
+from memory_dna import red_team
+from memory_dna.vulnerabilities import Bias
+from memory_dna.attacks.single_turn import PromptInjection
 
 async def model_callback(input: str) -> str:
     # Replace this with your LLM application
@@ -230,7 +231,7 @@ python red_team_llm.py
 **That's it! Your first red team is complete.** Here's what happened:
 
 - `model_callback` wraps your LLM system and generates a `str` output for a given `input`.
-- At red teaming time, `deepteam` simulates a [`PromptInjection`](https://www.trydeepteam.com/docs/red-teaming-adversarial-attacks-prompt-injection) attack targeting [`Bias`](https://www.trydeepteam.com/docs/red-teaming-vulnerabilities-bias) vulnerabilities.
+- At red teaming time, `memory_dna` simulates a [`PromptInjection`](https://www.trydeepteam.com/docs/red-teaming-adversarial-attacks-prompt-injection) attack targeting [`Bias`](https://www.trydeepteam.com/docs/red-teaming-vulnerabilities-bias) vulnerabilities.
 - Your `model_callback`'s outputs are evaluated using the `BiasMetric`, producing a binary score of 0 or 1.
 - The final passing rate for `Bias` is determined by the proportion of scores that equal 1.
 
@@ -243,8 +244,8 @@ Unlike traditional evaluation, red teaming does not require a prepared dataset �
 Use established AI safety standards like OWASP and NIST instead of manually picking vulnerabilities:
 
 ```python
-from deepteam import red_team
-from deepteam.frameworks import OWASPTop10
+from memory_dna import red_team
+from memory_dna.frameworks import OWASPTop10
 
 async def model_callback(input: str) -> str:
     # Replace this with your LLM application
@@ -262,11 +263,11 @@ This automatically maps the framework's categories to the right vulnerabilities 
 
 ## Guard Your LLM in Production
 
-Once you've found your vulnerabilities, use DeepTeam's guardrails to prevent them in production:
+Once you've found your vulnerabilities, use Memory DNA's guardrails to prevent them in production:
 
 ```python
-from deepteam import Guardrails
-from deepteam.guardrails import PromptInjectionGuard, ToxicityGuard, PrivacyGuard
+from memory_dna import Guardrails
+from memory_dna.guardrails import PromptInjectionGuard, ToxicityGuard, PrivacyGuard
 
 guardrails = Guardrails(
     input_guards=[PromptInjectionGuard(), PrivacyGuard()],
@@ -286,9 +287,9 @@ print(output_result.breached)  # True
 
 &nbsp;
 
-# DeepTeam with Confident AI
+# Memory DNA with Confident AI
 
-[Confident AI](https://app.confident-ai.com?utm_source=deepteam&utm_medium=github&utm_content=platform_section) is the all-in-one platform that integrates natively with DeepTeam and [DeepEval](https://github.com/confident-ai/deepeval).
+[Confident AI](https://app.confident-ai.com?utm_source=deepteam&utm_medium=github&utm_content=platform_section) is the all-in-one platform that integrates natively with Memory DNA and [DeepEval](https://github.com/confident-ai/deepeval).
 
 - **Manage risk assessments** — view, compare, and track red teaming results across iterations
 - **Monitor in production** — detect and alert on vulnerabilities hitting your live LLM system
@@ -315,4 +316,4 @@ Built by the founders of Confident AI. Contact jeffreyip@confident-ai.com for al
 
 # License
 
-DeepTeam is licensed under Apache 2.0 - see the [LICENSE.md](https://github.com/confident-ai/deepteam/blob/main/LICENSE.md) file for details.
+Memory DNA is licensed under Apache 2.0 - see the [LICENSE.md](https://github.com/confident-ai/deepteam/blob/main/LICENSE.md) file for details.

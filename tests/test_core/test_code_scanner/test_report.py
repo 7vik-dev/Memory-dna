@@ -1,6 +1,6 @@
 import json
 
-from deepteam.code_scanner import (
+from memory_dna.code_scanner import (
     CodeFinding,
     filter_by_severity,
     to_json,

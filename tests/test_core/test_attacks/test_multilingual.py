@@ -1,5 +1,5 @@
 import pytest
-from deepteam.attacks.single_turn import Multilingual
+from memory_dna.attacks.single_turn import Multilingual
 
 
 class TestMultilingual:

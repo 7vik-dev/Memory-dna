@@ -1,11 +1,11 @@
 """
-Smoke-test the DeepTeam code scanner through an agentic harness, using that vendor's own API key.
+Smoke-test the memory_dna code scanner through an agentic harness, using that vendor's own API key.
 
 Each harness SDK is an optional extra. Install the one you want and set its key:
 
-    poetry add "deepteam[codex]"       && export OPENAI_API_KEY=...      # Codex
-    poetry add "deepteam[claude-code]" && export ANTHROPIC_API_KEY=...   # Claude Code
-    poetry add "deepteam[cursor]"      && export CURSOR_API_KEY=...      # Cursor CLI
+    poetry add "memory_dna[codex]"       && export OPENAI_API_KEY=...      # Codex
+    poetry add "memory_dna[claude-code]" && export ANTHROPIC_API_KEY=...   # Claude Code
+    poetry add "memory_dna[cursor]"      && export CURSOR_API_KEY=...      # Cursor CLI
 
 Then run this script, naming the provider (and optionally a model):
 
@@ -16,13 +16,13 @@ Then run this script, naming the provider (and optionally a model):
 
 The exact same selection works on the CLI:
 
-    poetry run deepteam scan . --provider codex
-    poetry run deepteam scan . --provider claude-code --model <model>
+    poetry run memory_dna scan . --provider codex
+    poetry run memory_dna scan . --provider claude-code --model <model>
 """
 
 import sys
 
-from deepteam.code_scanner import (
+from memory_dna.code_scanner import (
     CodeChunk,
     CodeScanner,
     build_engine,

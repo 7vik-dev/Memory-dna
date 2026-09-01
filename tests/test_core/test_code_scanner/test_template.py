@@ -1,8 +1,8 @@
-from deepteam.code_scanner import (
+from memory_dna.code_scanner import (
     DEFAULT_CODE_SCAN_VULNERABILITIES,
     CodeScanTemplate,
 )
-from deepteam.vulnerabilities import SSRF, BaseVulnerability
+from memory_dna.vulnerabilities import SSRF, BaseVulnerability
 
 
 def _catalog(prompt: str) -> str:

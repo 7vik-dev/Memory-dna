@@ -1,8 +1,8 @@
 import pytest
 
-from deepteam.vulnerabilities import Misinformation
-from deepteam.vulnerabilities.misinformation import MisinformationType
-from deepteam.test_case import RTTestCase
+from memory_dna.vulnerabilities import Misinformation
+from memory_dna.vulnerabilities.misinformation import MisinformationType
+from memory_dna.test_case import RTTestCase
 
 
 class TestMisinformation:
@@ -107,7 +107,7 @@ class TestMisinformation:
         assert hasattr(test_case, "reason")
 
     def test_get_metric_returns_Misinformation_metric(self):
-        from deepteam.metrics import MisinformationMetric
+        from memory_dna.metrics import MisinformationMetric
 
         misinformation = Misinformation(
             async_mode=True, verbose_mode=True, evaluation_model="gpt-4o"

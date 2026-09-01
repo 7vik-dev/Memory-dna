@@ -1,5 +1,5 @@
 import pytest
-from deepteam.attacks.single_turn import AdversarialPoetry
+from memory_dna.attacks.single_turn import AdversarialPoetry
 
 
 class TestAdversarialPoetry:

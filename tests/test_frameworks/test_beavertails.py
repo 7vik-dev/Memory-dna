@@ -1,6 +1,6 @@
 import pytest
-from deepteam.frameworks import BeaverTails
-from deepteam import red_team
+from memory_dna.frameworks import BeaverTails
+from memory_dna import red_team
 
 
 class TestBeaverTails:

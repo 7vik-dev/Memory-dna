@@ -1,8 +1,8 @@
 import pytest
 
-from deepteam.vulnerabilities import BFLA
-from deepteam.vulnerabilities.bfla import BFLAType
-from deepteam.test_case import RTTestCase
+from memory_dna.vulnerabilities import BFLA
+from memory_dna.vulnerabilities.bfla import BFLAType
+from memory_dna.test_case import RTTestCase
 
 
 class TestBFLA:
@@ -83,7 +83,7 @@ class TestBFLA:
         assert hasattr(test_case, "reason")
 
     def test_get_metric_returns_BFLA_metric(self):
-        from deepteam.metrics import BFLAMetric
+        from memory_dna.metrics import BFLAMetric
 
         bfla = BFLA(
             async_mode=True, verbose_mode=True, evaluation_model="gpt-4o"

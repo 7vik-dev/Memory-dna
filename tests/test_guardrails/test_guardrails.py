@@ -1,7 +1,7 @@
 import pytest
 
-from deepteam.guardrails import Guardrails, GuardResult
-from deepteam.guardrails.guards import (
+from memory_dna.guardrails import Guardrails, GuardResult
+from memory_dna.guardrails.guards import (
     PromptInjectionGuard,
     ToxicityGuard,
 )

@@ -1,8 +1,8 @@
 import pytest
 
-from deepteam.vulnerabilities import IllegalActivity
-from deepteam.vulnerabilities.illegal_activity import IllegalActivityType
-from deepteam.test_case import RTTestCase
+from memory_dna.vulnerabilities import IllegalActivity
+from memory_dna.vulnerabilities.illegal_activity import IllegalActivityType
+from memory_dna.test_case import RTTestCase
 
 
 class TestIllegalActivity:
@@ -127,7 +127,7 @@ class TestIllegalActivity:
         assert hasattr(test_case, "reason")
 
     def test_get_metric_returns_IllegalActivity_metric(self):
-        from deepteam.metrics import IllegalMetric
+        from memory_dna.metrics import IllegalMetric
 
         illegal = IllegalActivity(
             async_mode=True, verbose_mode=True, evaluation_model="gpt-4o"

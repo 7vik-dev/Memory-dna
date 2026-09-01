@@ -1,10 +1,10 @@
 import pytest
 
-from deepteam.vulnerabilities import IntellectualProperty
-from deepteam.vulnerabilities.intellectual_property import (
+from memory_dna.vulnerabilities import IntellectualProperty
+from memory_dna.vulnerabilities.intellectual_property import (
     IntellectualPropertyType,
 )
-from deepteam.test_case import RTTestCase
+from memory_dna.test_case import RTTestCase
 
 
 class TestIntellectualProperty:
@@ -110,7 +110,7 @@ class TestIntellectualProperty:
         assert hasattr(test_case, "reason")
 
     def test_get_metric_returns_IntellectualProperty_metric(self):
-        from deepteam.metrics import IntellectualPropertyMetric
+        from memory_dna.metrics import IntellectualPropertyMetric
 
         intellectual = IntellectualProperty(
             async_mode=True, verbose_mode=True, evaluation_model="gpt-4o"

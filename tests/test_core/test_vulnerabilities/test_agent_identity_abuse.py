@@ -1,8 +1,8 @@
 import pytest
 
-from deepteam.vulnerabilities import AgentIdentityAbuse
-from deepteam.vulnerabilities.agent_identity_abuse import AgentIdentityAbuseType
-from deepteam.test_case import RTTestCase
+from memory_dna.vulnerabilities import AgentIdentityAbuse
+from memory_dna.vulnerabilities.agent_identity_abuse import AgentIdentityAbuseType
+from memory_dna.test_case import RTTestCase
 
 
 class TestAgentIdentityAbuse:
@@ -100,7 +100,7 @@ class TestAgentIdentityAbuse:
         assert hasattr(test_case, "reason")
 
     def test_get_metric_returns_agent_identity_metric(self):
-        from deepteam.metrics import AgentIdentityAbuseMetric
+        from memory_dna.metrics import AgentIdentityAbuseMetric
 
         agent_identity_abuse = AgentIdentityAbuse(
             async_mode=True, verbose_mode=True, evaluation_model="gpt-4o"

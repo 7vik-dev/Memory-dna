@@ -1,6 +1,6 @@
 import pytest
-from deepteam.frameworks import Aegis
-from deepteam import red_team
+from memory_dna.frameworks import Aegis
+from memory_dna import red_team
 
 
 class TestAegis:

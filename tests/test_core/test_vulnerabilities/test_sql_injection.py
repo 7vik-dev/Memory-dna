@@ -1,8 +1,8 @@
 import pytest
 
-from deepteam.vulnerabilities import SQLInjection
-from deepteam.vulnerabilities.sql_injection import SQLInjectionType
-from deepteam.test_case import RTTestCase
+from memory_dna.vulnerabilities import SQLInjection
+from memory_dna.vulnerabilities.sql_injection import SQLInjectionType
+from memory_dna.test_case import RTTestCase
 
 
 class TestSQLInjection:
@@ -97,7 +97,7 @@ class TestSQLInjection:
         assert hasattr(test_case, "reason")
 
     def test_get_metric_returns_SQLInjection_metric(self):
-        from deepteam.metrics import SQLInjectionMetric
+        from memory_dna.metrics import SQLInjectionMetric
 
         sql_injection = SQLInjection(
             async_mode=True, verbose_mode=True, evaluation_model="gpt-4o"

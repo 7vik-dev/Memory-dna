@@ -1,8 +1,8 @@
 import pytest
 
-from deepteam.vulnerabilities import Robustness
-from deepteam.vulnerabilities.robustness import RobustnessType
-from deepteam.test_case import RTTestCase
+from memory_dna.vulnerabilities import Robustness
+from memory_dna.vulnerabilities.robustness import RobustnessType
+from memory_dna.test_case import RTTestCase
 
 
 class TestRobustness:
@@ -71,7 +71,7 @@ class TestRobustness:
         assert hasattr(test_case, "reason")
 
     def test_get_metric_returns_Robustness_overreliance_metric(self):
-        from deepteam.metrics import OverrelianceMetric
+        from memory_dna.metrics import OverrelianceMetric
 
         robustness = Robustness(
             async_mode=True, verbose_mode=True, evaluation_model="gpt-4o"
@@ -82,7 +82,7 @@ class TestRobustness:
         assert metric.verbose_mode is True
 
     def test_get_metric_returns_Robustness_hijacking_metric(self):
-        from deepteam.metrics import HijackingMetric
+        from memory_dna.metrics import HijackingMetric
 
         robustness = Robustness(
             async_mode=True, verbose_mode=True, evaluation_model="gpt-4o"

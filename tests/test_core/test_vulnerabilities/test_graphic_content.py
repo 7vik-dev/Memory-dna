@@ -1,8 +1,8 @@
 import pytest
 
-from deepteam.vulnerabilities import GraphicContent
-from deepteam.vulnerabilities.graphic_content import GraphicContentType
-from deepteam.test_case import RTTestCase
+from memory_dna.vulnerabilities import GraphicContent
+from memory_dna.vulnerabilities.graphic_content import GraphicContentType
+from memory_dna.test_case import RTTestCase
 
 
 class TestGraphicContent:
@@ -93,7 +93,7 @@ class TestGraphicContent:
         assert hasattr(test_case, "reason")
 
     def test_get_metric_returns_GraphicContent_metric(self):
-        from deepteam.metrics import GraphicMetric
+        from memory_dna.metrics import GraphicMetric
 
         graphic_content = GraphicContent(
             async_mode=True, verbose_mode=True, evaluation_model="gpt-4o"

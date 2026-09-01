@@ -1,10 +1,10 @@
 import pytest
 
-from deepteam.vulnerabilities import IndirectInstruction
-from deepteam.vulnerabilities.indirect_instruction import (
+from memory_dna.vulnerabilities import IndirectInstruction
+from memory_dna.vulnerabilities.indirect_instruction import (
     IndirectInstructionType,
 )
-from deepteam.test_case import RTTestCase
+from memory_dna.test_case import RTTestCase
 
 
 class TestIndirectInstruction:
@@ -110,7 +110,7 @@ class TestIndirectInstruction:
         assert hasattr(test_case, "reason")
 
     def test_get_metric_returns_indirect_instruction_metric(self):
-        from deepteam.metrics import IndirectInstructionMetric
+        from memory_dna.metrics import IndirectInstructionMetric
 
         indirect_instruction = IndirectInstruction(
             async_mode=True, verbose_mode=True, evaluation_model="gpt-4o"

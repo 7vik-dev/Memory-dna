@@ -1,5 +1,5 @@
 import json
-from deepteam.guardrails.guards import ToxicityGuard
+from memory_dna.guardrails.guards import ToxicityGuard
 
 
 class TestToxicityGuard:

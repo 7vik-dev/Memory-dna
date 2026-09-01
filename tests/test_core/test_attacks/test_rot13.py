@@ -1,5 +1,5 @@
 import pytest
-from deepteam.attacks.single_turn import ROT13
+from memory_dna.attacks.single_turn import ROT13
 
 
 class TestROT13:

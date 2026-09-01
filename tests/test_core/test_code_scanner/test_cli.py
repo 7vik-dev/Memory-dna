@@ -3,9 +3,9 @@ import json
 import pytest
 from typer.testing import CliRunner
 
-import deepteam.cli.main as climain
-import deepteam.code_scanner.code_scanner as cs_module
-from deepteam.code_scanner import CodeFinding, CodeFindingsList
+import memory_dna.cli.main as climain
+import memory_dna.code_scanner.code_scanner as cs_module
+from memory_dna.code_scanner import CodeFinding, CodeFindingsList
 
 
 @pytest.fixture
@@ -51,7 +51,7 @@ class TestScanCli:
 
     def test_markdown_default(self, runner, scan_dir):
         r = runner.invoke(climain.app, ["scan", scan_dir])
-        assert "DeepTeam Code" in r.stdout
+        assert "memory_dna Code" in r.stdout
 
     def test_min_severity_filters(self, runner, scan_dir):
         r = runner.invoke(
@@ -87,7 +87,7 @@ class TestScanCli:
         assert r.exit_code != 0
 
     def test_comment_flag_posts_findings(self, runner, scan_dir, monkeypatch):
-        import deepteam.code_scanner as pkg
+        import memory_dna.code_scanner as pkg
 
         calls = []
         monkeypatch.setattr(

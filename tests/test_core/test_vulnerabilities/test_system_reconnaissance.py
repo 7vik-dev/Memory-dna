@@ -1,10 +1,10 @@
 import pytest
 
-from deepteam.vulnerabilities import SystemReconnaissance
-from deepteam.vulnerabilities.system_reconnaissance import (
+from memory_dna.vulnerabilities import SystemReconnaissance
+from memory_dna.vulnerabilities.system_reconnaissance import (
     SystemReconnaissanceType,
 )
-from deepteam.test_case import RTTestCase
+from memory_dna.test_case import RTTestCase
 
 
 class TestSystemReconnaissance:
@@ -98,7 +98,7 @@ class TestSystemReconnaissance:
         assert hasattr(test_case, "reason")
 
     def test_get_metric_returns_cross_context_retrieval_metric(self):
-        from deepteam.metrics import SystemReconnaissanceMetric
+        from memory_dna.metrics import SystemReconnaissanceMetric
 
         system_reconnaissance = SystemReconnaissance(
             async_mode=True, verbose_mode=True, evaluation_model="gpt-4o"

@@ -1,5 +1,5 @@
 import pytest
-from deepteam.attacks.single_turn import AuthorityEscalation
+from memory_dna.attacks.single_turn import AuthorityEscalation
 
 
 class TestAuthorityEscalation:

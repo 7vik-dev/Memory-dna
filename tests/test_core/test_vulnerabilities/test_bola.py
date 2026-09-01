@@ -1,8 +1,8 @@
 import pytest
 
-from deepteam.vulnerabilities import BOLA
-from deepteam.vulnerabilities.bola import BOLAType
-from deepteam.test_case import RTTestCase
+from memory_dna.vulnerabilities import BOLA
+from memory_dna.vulnerabilities.bola import BOLAType
+from memory_dna.test_case import RTTestCase
 
 
 class TestBOLA:
@@ -83,7 +83,7 @@ class TestBOLA:
         assert hasattr(test_case, "reason")
 
     def test_get_metric_returns_BOLA_metric(self):
-        from deepteam.metrics import BOLAMetric
+        from memory_dna.metrics import BOLAMetric
 
         bola = BOLA(
             async_mode=True, verbose_mode=True, evaluation_model="gpt-4o"

@@ -1,11 +1,11 @@
 [tool.poetry]
-name = "deepteam"
-version = "1.0.9"
-description = "The LLM Red Teaming Framework"
+name = "memory-dna"
+version = "0.1.0"
+description = "Memory DNA - Red Teaming Framework for AI Agents"
 authors = ["Jeffrey Ip <jeffreyip@confident-ai.com>"]
 license = "Apache-2.0"
 readme = "README.md"
-packages = [{include = "deepteam"}]
+packages = [{include = "memory_dna"}]
 
 [tool.poetry.dependencies]
 python = ">=3.9,<3.14"
@@ -15,6 +15,7 @@ grpcio = ">=1.67.1"
 openai = ">=1.76.2"
 pyyaml = ">=6.0.2"
 requests = ">=2.31.0"
+sentry-sdk = ">=2.0.0"
 tabulate = ">=0.9.0"
 tqdm = ">=4.66.1"
 openai-codex = { version = "*", optional = true, python = ">=3.10", allow-prereleases = true }
@@ -38,7 +39,7 @@ build = ">=1.0.3"
 twine = ">=6.1.0"
 
 [tool.poetry.scripts]
-deepteam = "deepteam.cli.main:app"
+memory-dna = "memory_dna.cli.main:app"
 
 [tool.poetry.urls]
 Repository = "https://github.com/confident-ai/deepteam"

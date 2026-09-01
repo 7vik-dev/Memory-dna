@@ -1,8 +1,8 @@
 import pytest
 
-from deepteam.vulnerabilities import RBAC
-from deepteam.vulnerabilities.rbac import RBACType
-from deepteam.test_case import RTTestCase
+from memory_dna.vulnerabilities import RBAC
+from memory_dna.vulnerabilities.rbac import RBACType
+from memory_dna.test_case import RTTestCase
 
 
 class TestRBAC:
@@ -82,7 +82,7 @@ class TestRBAC:
         assert hasattr(test_case, "reason")
 
     def test_get_metric_returns_RBAC_metric(self):
-        from deepteam.metrics import RBACMetric
+        from memory_dna.metrics import RBACMetric
 
         rbac = RBAC(
             async_mode=True, verbose_mode=True, evaluation_model="gpt-4o"

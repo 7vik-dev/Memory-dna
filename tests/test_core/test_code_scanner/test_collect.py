@@ -1,7 +1,7 @@
 import subprocess
 from pathlib import Path
 
-from deepteam.code_scanner import collect_changed_files, collect_files
+from memory_dna.code_scanner import collect_changed_files, collect_files
 
 
 def _tree(tmp_path: Path) -> Path:

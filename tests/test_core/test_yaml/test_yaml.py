@@ -1,8 +1,8 @@
 import pytest
 import os
-from deepteam.cli.main import run, _load_config, _load_callback_from_file
-from deepteam.cli.model_callback import load_model
-from deepteam.red_teamer.risk_assessment import RiskAssessment
+from memory_dna.cli.main import run, _load_config, _load_callback_from_file
+from memory_dna.cli.model_callback import load_model
+from memory_dna.red_teamer.risk_assessment import RiskAssessment
 from deepeval.models import DeepEvalBaseLLM
 
 

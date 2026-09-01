@@ -1,5 +1,5 @@
 import pytest
-from deepteam.attacks.single_turn import SystemOverride
+from memory_dna.attacks.single_turn import SystemOverride
 
 
 class TestSystemOverride:

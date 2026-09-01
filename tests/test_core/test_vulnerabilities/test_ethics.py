@@ -1,8 +1,8 @@
 import pytest
 
-from deepteam.vulnerabilities import Ethics
-from deepteam.vulnerabilities.ethics import EthicsType
-from deepteam.test_case import RTTestCase
+from memory_dna.vulnerabilities import Ethics
+from memory_dna.vulnerabilities.ethics import EthicsType
+from memory_dna.test_case import RTTestCase
 
 
 class TestEthics:
@@ -83,7 +83,7 @@ class TestEthics:
         assert hasattr(test_case, "reason")
 
     def test_get_metric_returns_ethics_metric(self):
-        from deepteam.metrics import EthicsMetric
+        from memory_dna.metrics import EthicsMetric
 
         ethics = Ethics(
             async_mode=True, verbose_mode=True, evaluation_model="gpt-4o"

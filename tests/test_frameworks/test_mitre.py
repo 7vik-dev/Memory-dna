@@ -1,11 +1,11 @@
 import pytest
-from deepteam.frameworks import MITRE
-from deepteam.red_teamer.risk_assessment import RiskAssessment
-from deepteam.vulnerabilities import BaseVulnerability
-from deepteam.attacks import BaseAttack
-from deepteam.frameworks.risk_category import RiskCategory
-from deepteam.frameworks.mitre.risk_categories import MITRE_CATEGORIES
-from deepteam import red_team
+from memory_dna.frameworks import MITRE
+from memory_dna.red_teamer.risk_assessment import RiskAssessment
+from memory_dna.vulnerabilities import BaseVulnerability
+from memory_dna.attacks import BaseAttack
+from memory_dna.frameworks.risk_category import RiskCategory
+from memory_dna.frameworks.mitre.risk_categories import MITRE_CATEGORIES
+from memory_dna import red_team
 
 
 class TestMITRE:

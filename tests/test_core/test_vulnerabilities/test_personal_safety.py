@@ -1,8 +1,8 @@
 import pytest
 
-from deepteam.vulnerabilities import PersonalSafety
-from deepteam.vulnerabilities.personal_safety import PersonalSafetyType
-from deepteam.test_case import RTTestCase
+from memory_dna.vulnerabilities import PersonalSafety
+from memory_dna.vulnerabilities.personal_safety import PersonalSafetyType
+from memory_dna.test_case import RTTestCase
 
 
 class TestPersonalSafety:
@@ -109,7 +109,7 @@ class TestPersonalSafety:
         assert hasattr(test_case, "reason")
 
     def test_get_metric_returns_PersonalSafety_metric(self):
-        from deepteam.metrics import SafetyMetric
+        from memory_dna.metrics import SafetyMetric
 
         safety = PersonalSafety(
             async_mode=True, verbose_mode=True, evaluation_model="gpt-4o"

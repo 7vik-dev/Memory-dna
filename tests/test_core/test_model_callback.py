@@ -1,14 +1,14 @@
 import pytest
 import inspect
 import asyncio
-from deepteam.test_case import RTTurn
-from deepteam.red_teamer.utils import (
+from memory_dna.test_case import RTTurn
+from memory_dna.red_teamer.utils import (
     resolve_model_callback,
     wrap_model_callback,
 )
 from deepeval.models import GPTModel
-from deepteam.vulnerabilities import Bias
-from deepteam import red_team
+from memory_dna.vulnerabilities import Bias
+from memory_dna import red_team
 
 
 def custom_model_callback(input: str, turns=None):

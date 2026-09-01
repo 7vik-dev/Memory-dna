@@ -1,10 +1,10 @@
 import pytest
 
-from deepteam.vulnerabilities import AutonomousAgentDrift
-from deepteam.vulnerabilities.autonomous_agent_drift import (
+from memory_dna.vulnerabilities import AutonomousAgentDrift
+from memory_dna.vulnerabilities.autonomous_agent_drift import (
     AutonomousAgentDriftType,
 )
-from deepteam.test_case import RTTestCase
+from memory_dna.test_case import RTTestCase
 
 
 class TestAutonomousAgentDrift:
@@ -110,7 +110,7 @@ class TestAutonomousAgentDrift:
         assert hasattr(test_case, "reason")
 
     def test_get_metric_returns_tool_metadata_poisoning_metric(self):
-        from deepteam.metrics import AutonomousAgentDriftMetric
+        from memory_dna.metrics import AutonomousAgentDriftMetric
 
         autonoumus_agent_drift = AutonomousAgentDrift(
             async_mode=True, verbose_mode=True, evaluation_model="gpt-4o"

@@ -1,9 +1,9 @@
 import pytest
 from unittest.mock import AsyncMock, MagicMock
-from deepteam.attacks.multi_turn import LinearJailbreaking
-from deepteam.vulnerabilities import Bias
-from deepteam.test_case.test_case import RTTurn
-from deepteam.red_teamer.utils import wrap_model_callback
+from memory_dna.attacks.multi_turn import LinearJailbreaking
+from memory_dna.vulnerabilities import Bias
+from memory_dna.test_case.test_case import RTTurn
+from memory_dna.red_teamer.utils import wrap_model_callback
 
 
 class TestLinearJailbreaking:

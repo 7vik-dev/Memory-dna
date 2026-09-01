@@ -1,13 +1,13 @@
 import pytest
-from deepteam.frameworks import EUAIAct
-from deepteam.red_teamer.risk_assessment import RiskAssessment
-from deepteam.vulnerabilities import BaseVulnerability
-from deepteam.attacks import BaseAttack
-from deepteam.frameworks.risk_category import RiskCategory
-from deepteam.frameworks.eu_ai_act.risk_categories import (
+from memory_dna.frameworks import EUAIAct
+from memory_dna.red_teamer.risk_assessment import RiskAssessment
+from memory_dna.vulnerabilities import BaseVulnerability
+from memory_dna.attacks import BaseAttack
+from memory_dna.frameworks.risk_category import RiskCategory
+from memory_dna.frameworks.eu_ai_act.risk_categories import (
     EU_AI_ACT_CATEGORIES,
 )
-from deepteam import red_team
+from memory_dna import red_team
 
 
 EU_AI_ACT_DEFAULT_CATEGORIES = {

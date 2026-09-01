@@ -1,5 +1,5 @@
 import json
-from deepteam.guardrails.guards import HallucinationGuard
+from memory_dna.guardrails.guards import HallucinationGuard
 
 
 class TestHallucinationGuard:
