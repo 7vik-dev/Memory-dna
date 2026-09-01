@@ -273,20 +273,6 @@ print(output_result.breached)  # True
     <img src="https://github.com/confident-ai/deepteam/blob/main/assets/confident-demo.gif" alt="Confident AI" width="90%">
 </p>
 
-&nbsp;
-
-# Contributing
-
-Please read [CONTRIBUTING.md](https://github.com/confident-ai/deepteam/blob/main/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
-
-&nbsp;
-
-# Authors
-
-Built by the founders of Confident AI. Contact jeffreyip@confident-ai.com for all enquiries.
-
-&nbsp;
-
 # License
 
 Memory DNA is licensed under Apache 2.0 - see the [LICENSE.md](https://github.com/confident-ai/deepteam/blob/main/LICENSE.md) file for details.
