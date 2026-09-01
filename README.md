@@ -12,28 +12,6 @@
     <p>
 </h4>
 
-<p align="center">
-    <a href="https://github.com/confident-ai/deepteam/releases">
-        <img alt="GitHub release" src="https://img.shields.io/github/v/release/confident-ai/deepteam">
-    </a>
-    <a href="https://discord.gg/3SEyvpgu2f">
-        <img alt="discord-invite" src="https://dcbadge.limes.pink/api/server/3SEyvpgu2f?style=flat">
-    </a>
-    <a href="https://github.com/confident-ai/deepteam/blob/main/LICENSE.md">
-        <img alt="License" src="https://img.shields.io/github/license/confident-ai/deepteam.svg?color=yellow">
-    </a>
-</p>
-
-<p align="center">
-    <a href="https://www.readme-i18n.com/confident-ai/deepteam?lang=de">Deutsch</a> | 
-    <a href="https://www.readme-i18n.com/confident-ai/deepteam?lang=es">Español</a> | 
-    <a href="https://www.readme-i18n.com/confident-ai/deepteam?lang=fr">français</a> | 
-    <a href="https://www.readme-i18n.com/confident-ai/deepteam?lang=ja">日本語</a> | 
-    <a href="https://www.readme-i18n.com/confident-ai/deepteam?lang=ko">한국어</a> | 
-    <a href="https://www.readme-i18n.com/confident-ai/deepteam?lang=pt">Português</a> | 
-    <a href="https://www.readme-i18n.com/confident-ai/deepteam?lang=ru">Русский</a> | 
-    <a href="https://www.readme-i18n.com/confident-ai/deepteam?lang=zh">中文</a>
-</p>
 
 **Memory DNA** is a simple-to-use, open-source red teaming framework for LLM systems. Think of it as penetration testing, but for LLMs.
 
