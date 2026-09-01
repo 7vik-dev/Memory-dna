@@ -1,11 +1,6 @@
-<p align="center">
-    <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="assets/hero/wordmark-dark-v2.svg">
-        <img alt="Memory." src="assets/hero/wordmark-light-v2.svg" width="520">
-    </picture>
-</p>
 
-<h1 align="center">DNA</h1>
+
+<h1 align="center"> Memory DNA</h1>
 <h3 align="center">The LLM Red Teaming Framework</h3>
 
 <h4 align="center">
