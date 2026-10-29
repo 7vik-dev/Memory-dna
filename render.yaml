@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: memory-dna-demo
+    runtime: python
+    plan: free
+    rootDir: demo
+    buildCommand: python -m py_compile server.py
+    startCommand: python server.py
+    healthCheckPath: /api/status
